@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to right, #000000, #1b0037);
+    color:darkgray;
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+img {
+    width: 250px;
+    margin-top: 1rem;
+    border-radius: 100rem;
+    border: 0.2rem solid purple;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 2rem;
+    color: #eee
+}
+h2{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #d1c4e9;
+}
+p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/*Organização dos projetos*/
+.project-card{
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(128, 0, 128, 0.2);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+.project-card:hover{
+    transform: scale(1.01);
+        box-shadow: 0 0 12px rgba(255, 0, 255, 0.2);
+}
+.project-image{
+    background-color: #000000;
+    width: 130px;
+    border-radius: 0.5rem;
+    border: 2px solid purple;
+}
+.project-info h3{
+    margin: 0;
+    font-size: 1.2rem;
+}
+.project-info p{
+    margin-top: 0.5rem;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+.project-info a{
+    background: transparent;
+    border: 2px solid purple;
+    color: #d1c4e9;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    display: block;
+    margin: 0.8rem auto 0 auto;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align:center;
+}
+.project-info a:hover{
+    background: purple;
+    color:#1b0037;
+    transform: scale(1.05);
+}
+.project-info a i{
+    margin-right: 0.5rem;
+}
+
+/* Botões e links*/
+section#links a{
+    background-color: darkgray;
+    border: 0.2rem solid purple;
+    font-size: 1.2rem;
+    color: #1b0037;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0 1.1rem 0 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.4);
+
+    /* Tamanho fixo*/
+    width: 220px;
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+}
+section#links a:hover {
+    background: #2b003a;
+    color: darkgray;
+    transform: scale(1.03)
+}
+
+/*Contatos organização*/
+.contact-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.contact-grid a{
+    background-color: darkgray;
+    border: 0.2rem solid purple;
+    color: #1b0037;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0 6px rgba(255, 0, 255, 0.2);
+}
+.contact-grid a:hover{
+    background: #2b003a;
+    color:darkgray;
+    transform: scale(1.05);
+}
+.contact-grid i{
+    font-size: 1.2rem;
+}
+.contact-grid span{
+    font-weight: bold;
+}
+
+/*Seções e organização*/
+section{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.2);
+}
+
+/* Rodapé */
+footer {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 500px){
+    section#links a {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+    .project-info a {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+.project-card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 1.1rem;
+}
+
+.project-image {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+}
