@@ -6,9 +6,36 @@ body {
     text-align: center;
     background: linear-gradient(to right, #000000, #1b0037);
     color:darkgray;
-    font-family: "Orbitron", sans-serif;
+    font-family: "JetBrains Mono", monospace;
     margin: 0;
     padding: 0 1rem;
+}
+.traducao {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+}
+.language-button {
+    color:darkgray;
+  background-color: transparent;
+  border: none;
+  font-size: 27px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.language-button.active {
+  opacity: 1;
+  font-weight: bold;
+  text-shadow: 0 0 4px #00000033;
+}
+
+[data-key] {
+  transition: all 0.3s ease;
 }
 
 img {

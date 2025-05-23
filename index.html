@@ -9,12 +9,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Portfólio | Bryan Miranda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Orbitron:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -22,15 +19,19 @@
   </head>
 
   <body>
+    <div class="traducao">
+  <button class="language-button active" onclick="setLanguage('pt')">🇧🇷</button>
+  <button class="language-button" onclick="setLanguage('en')">🇺🇸</button>
+</div>
     <header>
       <img src="img/bryan-rio.PNG" alt="Foto de perfil"/>
       <h1>Bryan Miranda</h1>
-      <h2>Desenvolvedor Full Stack</h2>
+      <h2 data-key="my-title">Desenvolvedor Full Stack</h2>
     </header>
 
     <section id="about">
-      <h2>Sobre mim</h2>
-      <p>
+      <h2 data-key="about-title">Sobre mim</h2>
+      <p data-key="about-text">
         Bem-vindo à meu portfólio! Eu sou Bryan,<br />
         Sou estudante de Ciência da Computação e desenvolvedor full stack com
         paixão por desenvolvimento de software, criação de jogos e segurança da
@@ -41,28 +42,28 @@
     </section>
 
     <section id="projects">
-      <h2>Projetos</h2>
+      <h2 data-key="about-projects">Projetos</h2>
       <div class="project-card">
         <img src="img/frontend-world.png" alt="Imagem da landing page Frontend World"  class="project-image" />
         <div class="project-info">
           <h3>🌍 Frontend World – Landing Page</h3>
-          <p>Uma landing page moderna e responsiva criada com HTML e CSS.</p>
+          <p data-key="project-description">Uma landing page moderna e responsiva criada com HTML e CSS.</p>
           <a
             href="https://frontend-world.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer" class="project-link">
+            rel="noopener noreferrer" class="project-link" data-key="go-project">
             <i class="fas fa-external-link-alt"></i> Ver projeto online
           </a>
         </div>
       </div>
-      <p>
+      <p data-key="futures-projects">
         Em breve, você poderá ver aqui mais projetos com React, Node.js, C, C#,
         jogos 2D e muito mais.
       </p>
     </section>
 
     <section id="links">
-      <h2>Contatos</h2>
+      <h2 data-key="contact-me">Contatos</h2>
       <div class="contact-grid">
           <a
             href="https://linkedin.com/in/bryan-miraanda/"
@@ -87,5 +88,6 @@
     </section>
 
     <footer>© 2024 Bryan Miranda. Todos os direitos reservados.</footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
