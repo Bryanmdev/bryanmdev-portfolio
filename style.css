@@ -19,19 +19,22 @@ body {
   gap: 10px;
 }
 .language-button {
-    color:darkgray;
+  color: darkgray;
   background-color: transparent;
-  border: none;
-  font-size: 27px;
+  border: 1px solid purple;
+  font-size: 20px;
+  font-family: "Orbitron", sans-serif;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   opacity: 0.6;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .language-button.active {
   opacity: 1;
   font-weight: bold;
-  text-shadow: 0 0 4px #00000033;
+  box-shadow: 0 0 6px rgba(128, 0, 128, 0.5);
 }
 
 [data-key] {
@@ -228,7 +231,13 @@ footer {
     width: 80%;
     margin-bottom: 1rem;
 }
-.language-button{
-    font-size: 22px;
+.language-button {
+  font-size: 15px;
 }
+}
+
+@media(max-width: 400px){
+    .language-button{
+        font-size: 11px;
+    }
 }
