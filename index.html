@@ -9,9 +9,12 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Portfólio | Bryan Miranda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -19,17 +22,25 @@
   </head>
 
   <body>
+
     <div class="traducao">
-  <button class="language-button active" onclick="setLanguage('pt')">🇧🇷</button>
-  <button class="language-button" onclick="setLanguage('en')">🇺🇸</button>
-</div>
-    <header>
-      <img src="img/bryan-rio.PNG" alt="Foto de perfil"/>
+      <button class="language-button active" onclick="setLanguage('pt')">
+        BR
+      </button>
+      <button class="language-button" onclick="setLanguage('en')">US</button>
+    </div>
+    <div class="tema-toggle">
+ <button id="theme-btn" aria-label="Alternar tema">
+  <i class="fas fa-moon"></i>
+</button>
+    </div>
+    <header class="observe fade-in">
+      <img src="img/bryan-rio.PNG" alt="Foto de perfil" />
       <h1>Bryan Miranda</h1>
       <h2 data-key="my-title">Desenvolvedor Full Stack</h2>
     </header>
 
-    <section id="about">
+    <section id="about" class="observe">
       <h2 data-key="about-title">Sobre mim</h2>
       <p data-key="about-text">
         Bem-vindo à meu portfólio! Eu sou Bryan,<br />
@@ -41,17 +52,43 @@
       </p>
     </section>
 
-    <section id="projects">
+    <section id="skills" class="observe">
+  <h2>Skills</h2>
+  <p class="skills-subtitle" data-key="legend-skill" >Tecnologias que utilizo e aprimoro no meu dia:</p>
+  <div class="skills-grid observe">
+  <div class="skill-item fade-in delay-1" data-skill="html"><i class="fab fa-html5"></i><span>HTML5</span></div>
+  <div class="skill-item fade-in delay-2" data-skill="css"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+  <div class="skill-item fade-in delay-3" data-skill="js"><i class="fab fa-js"></i><span>JavaScript</span></div>
+  <div class="skill-item fade-in delay-4" data-skill="react"><i class="fab fa-react"></i><span>React</span></div>
+  <div class="skill-item fade-in delay-5" data-skill="git"><i class="fab fa-git-alt"></i><span>Git</span></div>
+  <div class="skill-item fade-in delay-6" data-skill="c"><i class="fas fa-code"></i><span>C</span></div>
+  <div class="skill-item fade-in delay-7" data-skill="node"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+  <div class="skill-item fade-in delay-8" data-skill="npm"><i class="fab fa-npm"></i><span>NPM</span></div>
+  <div class="skill-item fade-in delay-9" data-skill="linux"><i class="fab fa-linux"></i><span>Linux</span></div>
+</div>
+
+    </section>
+
+    <section id="projects" class="observe">
       <h2 data-key="about-projects">Projetos</h2>
-      <div class="project-card">
-        <img src="img/frontend-world.png" alt="Imagem da landing page Frontend World"  class="project-image" />
+      <div class="project-card observe">
+        <img
+          src="img/frontend-world.png"
+          alt="Imagem da landing page Frontend World"
+          class="project-image"
+        />
         <div class="project-info">
           <h3>🌍 Frontend World – Landing Page</h3>
-          <p data-key="project-description">Uma landing page moderna e responsiva criada com HTML e CSS.</p>
+          <p data-key="project-description">
+            Uma landing page moderna e responsiva criada com HTML e CSS.
+          </p>
           <a
             href="https://frontend-world.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer" class="project-link" data-key="go-project">
+            rel="noopener noreferrer"
+            class="project-link"
+            data-key="go-project"
+          >
             <i class="fas fa-external-link-alt"></i> Ver projeto online
           </a>
         </div>
@@ -62,29 +99,31 @@
       </p>
     </section>
 
-    <section id="links">
+    <section id="links" class="observe">
       <h2 data-key="contact-me">Contatos</h2>
       <div class="contact-grid">
-          <a
-            href="https://linkedin.com/in/bryan-miraanda/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-linkedin"></i> <span>Linkedin</span></a
-          >
-        
-          <a
-            href="https://github.com/Bryanmdev"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fab fa-github"></i> <span>Github</span></a
-          >
-       
-          <a href="mailto:bryanmiranda.dev@gmail.com"><i class="fas fa-envelope"></i> <span>Email</span></a>
-        
-          <a href="docs/Curriculo_Bryan_Miranda_DEV.pdf" download
-            > <i class="fas fa-file-download"></i> <span>Currículo</span></a
-          >
-        </div>
+        <a
+          href="https://linkedin.com/in/bryan-miraanda/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin"></i> <span>Linkedin</span></a
+        >
+
+        <a
+          href="https://github.com/Bryanmdev"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i> <span>Github</span></a
+        >
+
+        <a href="mailto:bryanmiranda.dev@gmail.com"
+          ><i class="fas fa-envelope"></i> <span>Email</span></a
+        >
+
+        <a href="docs/Curriculo_Bryan_Miranda_DEV.pdf" download>
+          <i class="fas fa-file-download"></i> <span>Currículo</span></a
+        >
+      </div>
     </section>
 
     <footer>© 2024 Bryan Miranda. Todos os direitos reservados.</footer>
