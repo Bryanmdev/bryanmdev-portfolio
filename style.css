@@ -135,6 +135,12 @@ body.light #theme-btn {
   border-color: purple;
 }
 
+.language-button:focus,
+#theme-btn:focus {
+  outline: 2px solid purple;
+  outline-offset: 4px;
+}
+
 img {
   width: 250px;
   margin-top: 1rem;
