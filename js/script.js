@@ -8,6 +8,7 @@ const translations = {
     "about-projects": "Projects",
     "project-description": "A modern, responsive landing page built with HTML and CSS.",
     "project-description2": "This is an interactive landing page project that works as a showcase for programming languages.",
+    "project-description3": "Brasil Hosp is a company specializing in medical, hospital, and laboratory products, offering complete solutions for clinics and hospitals throughout the country. The website features an organized and easy-to-navigate catalog, highlighting the quality of the materials and the company's commitment to efficiency and reliability in the healthcare sector.",
     "go-project": "View project",
     "futures-projects": "Soon you will see more projects here with React, Node.js, C, C#, 2D games and more.",
     "contact-me": "Contacts",
@@ -21,6 +22,7 @@ const translations = {
     "about-projects": "Projetos",
     "project-description": "Uma landing page moderna e responsiva criada com HTML e CSS.",
     "project-description2": "Este é um projeto interativo de uma landing page que funciona como uma vitrine de linguagens de programação.",
+     "project-description3": "A Brasil Hosp é uma empresa especializada em produtos médicos, hospitalares e laboratoriais, oferecendo soluções completas para clínicas e hospitais em todo o país. O site apresenta um catálogo organizado e de fácil navegação, destacando a qualidade dos materiais e o compromisso da empresa com a eficiência e a confiança no setor da saúde",
     "go-project": "Ver projeto online",
     "futures-projects": "Em breve, você poderá ver aqui mais projetos com React, Node.js, C, C#, jogos 2D e muito mais.",
     "contact-me": "Contatos",
@@ -92,3 +94,4 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
